@@ -35,3 +35,8 @@ CSS modal. No javascript.
 
 ### Author
 Jorge Chavez https://github.com/jorgechavz
+
+## Licence
+The MIT License (MIT)
+
+See [LICENCE](https://github.com/jorgechavz/pure-css-modal/blob/master/LICENSE) for details.
