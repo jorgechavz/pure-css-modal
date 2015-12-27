@@ -6,6 +6,9 @@ body{
   font-family: 'Helvetica';
   background-color: #f9f9f9;
 }
+*{
+  box-sizing: border-box;
+}
 .wrap{
   width: 80%;
   margin: 0px auto;

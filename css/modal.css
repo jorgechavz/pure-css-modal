@@ -32,11 +32,12 @@
 .modal .modal__wrap{
   background-color: #ddd;
   position: relative;
-  border-radius: 10px;
   box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
-  padding: 1em 0px;
+  padding: 40px 50px;
   width: 60%;
   margin: 0 auto;
+  align-self: flex-start;
+  border-radius: 2px;
 }
 
 .modal .modal__overlay{
@@ -45,21 +46,19 @@
   left: 0;
   right: 0;
   top: 0;
-  padding: 2em 0;
+  padding: 30px 0;
   text-align: center;
 }
 .modal .modal__overlay label{
   position: absolute;
   right: -10px;
   top: -10px;
-  font-size: 20px;
+  font-size: 40px;
   width: 30px;
   height: 30px;
   line-height: 30px;
+  color: #242424;
   display: inline-block;
-  background-color: white;
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px #FFC0CB, 0 0 0 3px #F42A54;
 }
 
 
@@ -67,7 +66,8 @@
   opacity: 0;
   z-index: -100;
   transform: scale(.5);
-  transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.3s ease;
+  display: flex;
 }
 
 /*
@@ -80,4 +80,6 @@ the modal__overlay) can be modified as convenience
   transform: scale(1);
   opacity:1;
   z-index: 800;
+  background-color: rgba(0,0,0,0.7);
+  overflow: auto;
 }
