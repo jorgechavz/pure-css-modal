@@ -1,0 +1,43 @@
+/*
+Author: Jorge Chavez
+Licence: MIT
+*/
+body{
+  font-family: 'Helvetica';
+  background-color: #f9f9f9;
+}
+*{
+  box-sizing: border-box;
+}
+.wrap{
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+}
+.wrap h1{
+  font-size: 70px;
+}
+.wrap h1 span{
+  color: #F42A54;
+  animation: 0.5s entry ease;
+  -webkit-animation: 0.5s entry ease forwards;
+}
+
+@keyframes entry{
+  from{
+    letter-spacing: 0px;
+  }
+  to{
+    letter-spacing: -15px;
+  }
+}
+
+
+@-webkit-keyframes entry{
+  from{
+    letter-spacing: 0px;
+  }
+  to{
+    letter-spacing: -15px;
+  }
+}
