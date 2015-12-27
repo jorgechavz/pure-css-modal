@@ -1,9 +1,80 @@
+/* Modal */
+#modal__trigger{
+  padding: 10px;
+}
+.modal > .mdodal__overlay{
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0px;
+}
+.modal > input{
+  display: none;
+}
+.modal > label{
+  background-color: #3C3C3C;
+  padding: 5px;
+  color: white;
+  border-radius: 2px;
+  box-shadow: 2px 2px 0 #F42A54;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+.modal > label:hover{
+  background-color: #000;
+}
+.modal label:hover{
+  cursor: pointer;
+}
+.modal .modal__wrap{
+  background-color: #ddd;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+  padding: 1em 0px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.modal .modal__overlay{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 2em 0;
+  text-align: center;
+}
+.modal .modal__overlay label{
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #FFC0CB, 0 0 0 3px #F42A54;
+}
+
+
 .modal__overlay{
   opacity: 0;
   z-index: -100;
   transform: scale(.5);
   transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+/*
+This is probably the trick for the modal.
+Whatever sibling of the input:checked (in this case
+the modal__overlay) can be modified as convenience
+ */
 
 .modal input:checked ~ .modal__overlay{
   transform: scale(1);
