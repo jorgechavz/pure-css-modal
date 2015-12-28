@@ -19,25 +19,22 @@ body{
 }
 .wrap h1 span{
   color: #F42A54;
-  animation: 0.5s entry ease;
-  -webkit-animation: 0.5s entry ease forwards;
 }
 
-@keyframes entry{
-  from{
-    letter-spacing: 0px;
-  }
-  to{
-    letter-spacing: -15px;
-  }
+.open-modal {
+  background-color: #3C3C3C;
+  border-radius: 2px;
+  box-shadow: 2px 2px 0 #F42A54;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  transition: all 0.5s ease;
 }
-
-
-@-webkit-keyframes entry{
-  from{
-    letter-spacing: 0px;
-  }
-  to{
-    letter-spacing: -15px;
+.open-modal {
+  background-color: #000;
+}
+@media (max-width: 500px){
+  .wrap {
+    width: 100%;
   }
 }
