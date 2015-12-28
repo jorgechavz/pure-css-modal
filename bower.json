@@ -1,0 +1,27 @@
+{
+  "name": "pure-css-modal",
+  "homepage": "http://jorgechavz.github.io/pure-css-modal/",
+  "authors": [
+    "Jorge Chavez <jorge_clan8@hotmail.com>"
+  ],
+  "description": "Modal box that works without JavaScript",
+  "main": "css/modal.css",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "css",
+    "modal",
+    "box",
+    "no",
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
