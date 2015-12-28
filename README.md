@@ -5,7 +5,19 @@ CSS modal. No javascript.
 ## DEMO
 See the demo: http://jorgechavz.github.io/pure-css-modal/
 
-## Add this basic HTML to your site.
+
+## Installation
+Via bower
+```
+bower install pure-css-modal
+```
+
+Add the CSS file to your project
+```
+<link rel="stylesheet"bower_components/pure-css-modal/css/modal.css"/>
+```
+
+Add this basic HTML to your site.
 ```html
 <div class="modal">
   <input id="modal__trigger" type="checkbox">
