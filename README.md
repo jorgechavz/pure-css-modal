@@ -36,6 +36,35 @@ Use a label as a trigger
 <label for="modal_trigger">Launch modal</label>
 ```
 
+
+## Customize
+Add entrance direction to the modal by adding any of this classes to the `modal_wrap` div
+
+| Class         |
+| ------------- |
+| from_top      |
+| from_bottom   |
+| from_left     |
+| from_right    |
+
+For example:
+
+```html
+<div class="modal">
+  <input id="modal_trigger" class="checkbox" type="checkbox">
+  <div class="modal_overlay">
+    <div class="modal_wrap from_top">
+      <label for="modal_trigger" class="close">&#10006;</label>
+      <!-- YOUR CONTENT HERE -->
+
+    </div>
+  </div>
+</div>
+
+```
+
+
+
 ### Modal in a 'CLOSE' state
 <img src="http://i653.photobucket.com/albums/uu259/chikinflue/Captura%20de%20pantalla%202015-06-18%20a%20las%2018.18.03_zpsq85cq4bo.png">
 
