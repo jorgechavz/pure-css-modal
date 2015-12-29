@@ -30,7 +30,6 @@ Github: http://github.com/jorgechavz
 /* Box */
 .modal .modal-wrap{
   background-color: #ddd;
-  position: relative;
   box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
   padding: 40px 50px;
   width: 60%;
@@ -73,20 +72,27 @@ Github: http://github.com/jorgechavz
 }
 
 
-/*
-This is probably the trick for the modal.
-Whatever sibling of the input:checked (in this case
-the modal-overlay) can be modified as convenience
- */
+ .modal .o-close {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: -100;
+ }
 
+.modal input:checked ~ .o-close {
+  z-index: 9998;
+}
 .modal input:checked ~ .modal-overlay{
   transform: scale(1);
   opacity:1;
-  z-index: 9999;
+  z-index: 9997;
   overflow: auto;
 }
 .modal input:checked ~ .modal-overlay .modal-wrap {
   transform: translateY(0);
+  z-index: 9999;
 }
 
 /* Responsive Design */
