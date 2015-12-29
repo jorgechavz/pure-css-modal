@@ -10,7 +10,7 @@ Github: http://github.com/jorgechavz
 }
 
 /* Gray background */
-.modal .modal_overlay{
+.modal .modal-overlay{
   opacity: 0;
   transition: all 0.3s ease;
   width: 50%;
@@ -28,7 +28,7 @@ Github: http://github.com/jorgechavz
 }
 
 /* Box */
-.modal .modal_wrap{
+.modal .modal-wrap{
   background-color: #ddd;
   position: relative;
   box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
@@ -39,22 +39,25 @@ Github: http://github.com/jorgechavz
   border-radius: 2px;
   transition: all 0.5s ease;
 }
-.modal .modal_wrap.from_left {
+.modal .modal-wrap.a-center {
+  align-self: center;
+}
+.modal .modal-wrap.from-left {
   transform: translateX(-100%);
 }
-.modal .modal_wrap.from_right {
+.modal .modal-wrap.from-right {
   transform: translateX(100%);
 }
-.modal .modal_wrap.from_top {
+.modal .modal-wrap.from-top {
   transform: translateY(-100%);
 }
-.modal .modal_wrap.from_bottom {
+.modal .modal-wrap.from-bottom {
   transform: translateY(100%);
 }
 
 
 /* Close button */
-.modal .modal_overlay .close{
+.modal .modal-overlay .close{
   position: absolute;
   right: 10px;
   top: 10px;
@@ -64,7 +67,7 @@ Github: http://github.com/jorgechavz
   color: #282c34;
 }
 
-.modal .modal_overlay .close:hover{
+.modal .modal-overlay .close:hover{
   cursor: pointer;
   color: #4b5361;
 }
@@ -73,23 +76,23 @@ Github: http://github.com/jorgechavz
 /*
 This is probably the trick for the modal.
 Whatever sibling of the input:checked (in this case
-the modal_overlay) can be modified as convenience
+the modal-overlay) can be modified as convenience
  */
 
-.modal input:checked ~ .modal_overlay{
+.modal input:checked ~ .modal-overlay{
   transform: scale(1);
   opacity:1;
   z-index: 9999;
   overflow: auto;
 }
-.modal input:checked ~ .modal_overlay .modal_wrap {
+.modal input:checked ~ .modal-overlay .modal-wrap {
   transform: translateY(0);
 }
 
 /* Responsive Design */
 /* Tablet size */
 @media (max-width: 800px){
-  .modal .modal_wrap {
+  .modal .modal-wrap {
     width: 80%;
     padding: 20px;
   }
@@ -97,7 +100,7 @@ the modal_overlay) can be modified as convenience
 
 /* Phone size */
 @media (max-width: 500px){
-  .modal .modal_wrap {
+  .modal .modal-wrap {
     width: 90%;
   }
 }

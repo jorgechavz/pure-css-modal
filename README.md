@@ -38,14 +38,21 @@ Use a label as a trigger
 
 
 ## Customize
-Add entrance direction to the modal by adding any of this classes to the `modal_wrap` div
+Add entrance direction to the modal by adding any of this classes to the `modal-wrap` div
 
 | Class         |
 | ------------- |
-| from_top      |
-| from_bottom   |
-| from_left     |
-| from_right    |
+| from-top      |
+| from-bottom   |
+| from-left     |
+| from-right    |
+
+You can center the modal in the middle of the screen by adding the class `a-center` to the `modal-wrap`
+
+| Class    |
+|----------|
+| a-center |
+
 
 For example:
 
