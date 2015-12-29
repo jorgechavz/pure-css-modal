@@ -20,12 +20,15 @@ Add the CSS file to your project
 Add this basic HTML to your site.
 ```html
 <div class="modal">
-  <input id="modal_trigger" class="checkbox" type="checkbox">
-  <div class="modal_overlay">
-    <div class="modal_wrap">
-      <label for="modal_trigger" class="close">&#10006;</label>
-      <!-- YOUR CONTENT HERE -->
-
+  <input id="modal-trigger" class="checkbox" type="checkbox">
+  <div class="modal-overlay">
+    <label for="modal-trigger" class="o-close"></label>
+    <div class="modal-wrap">
+      <label for="modal-trigger" class="close">&#10006;</label>
+      <h2>This is the modal content</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique cum sequi maxime officia provident voluptatibus aut! Non autem asperiores repellat architecto laboriosam officiis ab libero enim illo animi, error alias.
+      </p>
     </div>
   </div>
 </div>
@@ -58,8 +61,9 @@ For example:
 
 ```html
 <div class="modal">
-  <input id="modal_trigger" class="checkbox" type="checkbox">
+  <input id="modal_trigger" class="checkbox" type="checkbox">  
   <div class="modal_overlay">
+    <label for="modal-trigger" class="o-close"></label>
     <div class="modal_wrap from_top">
       <label for="modal_trigger" class="close">&#10006;</label>
       <!-- YOUR CONTENT HERE -->

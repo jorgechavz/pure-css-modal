@@ -21,10 +21,11 @@
     <div class="wrap">
       <h1>Pure <span>CSS</span> Modal</h1>
 
-      <!-- Modal -->
+      <!-- Normal modal -->
       <div class="modal">
         <input id="modal-trigger" class="checkbox" type="checkbox">
         <div class="modal-overlay">
+          <label for="modal-trigger" class="o-close"></label>
           <div class="modal-wrap">
             <label for="modal-trigger" class="close">&#10006;</label>
             <h2>This is the modal content</h2>
@@ -36,8 +37,110 @@
       </div>
       <!-- End Modal -->
 
+      <!-- Top modal -->
+      <div class="modal">
+        <input id="modal-trigger-top" class="checkbox" type="checkbox">
+        <div class="modal-overlay">
+          <label for="modal-trigger-top" class="o-close"></label>
+          <div class="modal-wrap from-top">
+            <label for="modal-trigger-top" class="close">&#10006;</label>
+            <h2>This is the modal content</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique cum sequi maxime officia provident voluptatibus aut! Non autem asperiores repellat architecto laboriosam officiis ab libero enim illo animi, error alias.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+
+      <!-- Bottom modal -->
+      <div class="modal">
+        <input id="modal-trigger-bottom" class="checkbox" type="checkbox">
+        <div class="modal-overlay">
+          <label for="modal-trigger-bottom" class="o-close"></label>
+          <div class="modal-wrap from-bottom">
+            <label for="modal-trigger-bottom" class="close">&#10006;</label>
+            <h2>This is the modal content</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique cum sequi maxime officia provident voluptatibus aut! Non autem asperiores repellat architecto laboriosam officiis ab libero enim illo animi, error alias.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+
+      <!-- Left modal -->
+      <div class="modal">
+        <input id="modal-trigger-left" class="checkbox" type="checkbox">
+        <div class="modal-overlay">
+          <label for="modal-trigger-left" class="o-close"></label>
+          <div class="modal-wrap from-left">
+            <label for="modal-trigger-left" class="close">&#10006;</label>
+            <h2>This is the modal content</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique cum sequi maxime officia provident voluptatibus aut! Non autem asperiores repellat architecto laboriosam officiis ab libero enim illo animi, error alias.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+
+      <!-- Right modal -->
+      <div class="modal">
+        <input id="modal-trigger-right" class="checkbox" type="checkbox">
+        <div class="modal-overlay">
+          <label for="modal-trigger-right" class="o-close"></label>
+          <div class="modal-wrap from-right">
+            <label for="modal-trigger-right" class="close">&#10006;</label>
+            <h2>This is the modal content</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique cum sequi maxime officia provident voluptatibus aut! Non autem asperiores repellat architecto laboriosam officiis ab libero enim illo animi, error alias.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+
+      <!-- Center modal -->
+      <div class="modal">
+        <input id="modal-trigger-center" class="checkbox" type="checkbox">
+        <div class="modal-overlay">
+          <label for="modal-trigger-center" class="o-close"></label>
+          <div class="modal-wrap a-center">
+            <label for="modal-trigger-center" class="close">&#10006;</label>
+            <h2>This is the modal content</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique cum sequi maxime officia provident voluptatibus aut! Non autem asperiores repellat architecto laboriosam officiis ab libero enim illo animi, error alias.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+
+      <!-- Center modal -->
+      <div class="modal">
+        <input id="modal-trigger-mix" class="checkbox" type="checkbox">
+        <div class="modal-overlay">
+          <label for="modal-trigger-mix" class="o-close"></label>
+          <div class="modal-wrap a-center from-bottom">
+            <label for="modal-trigger-mix" class="close">&#10006;</label>
+            <h2>This is the modal content</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique cum sequi maxime officia provident voluptatibus aut! Non autem asperiores repellat architecto laboriosam officiis ab libero enim illo animi, error alias.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+
       <!-- This label launch the modal -->
-      <label for="modal-trigger" class="open-modal">Launch modal</label>
+      <label for="modal-trigger" class="open-modal">Normal</label>
+      <label for="modal-trigger-top" class="open-modal">Top</label>
+      <label for="modal-trigger-bottom" class="open-modal">Bottom</label>
+      <label for="modal-trigger-left" class="open-modal">Left</label>
+      <label for="modal-trigger-right" class="open-modal">Right</label>
+      <label for="modal-trigger-center" class="open-modal">Center</label>
+      <label for="modal-trigger-mix" class="open-modal">Mix</label>
 
       <p>
         Click the button to open the modal
