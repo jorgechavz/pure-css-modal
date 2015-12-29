@@ -48,12 +48,22 @@ body{
   box-shadow: 2px 2px 0 #F42A54;
   color: white;
   font-size: 20px;
-  padding: 5px;
-  transition: all 0.5s ease;
+  padding: 10px;
+  transition: all 0.2s ease;
+  display: inline-block;
+  margin: 10px;
+  border-top: 1px solid transparent;
+  min-width: 150px;
 }
-.open-modal {
-  background-color: #000;
+
+.open-modal:hover {
+  cursor: pointer;
+  background-color: #E7E7E7;
+  color: #3C3C3C;
+  border-top: 1px solid #eEeeee;
+  box-shadow: 0.2px 0.2px 2px #F42A54;
 }
+
 @media (max-width: 500px){
   .wrap {
     width: 100%;
