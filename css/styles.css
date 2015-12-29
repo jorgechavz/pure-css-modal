@@ -20,6 +20,27 @@ body{
 .wrap h1 span{
   color: #F42A54;
 }
+.contribute {
+  position: fixed;
+  right: -20px;
+  top: 20px;
+  width: 16em;
+  height: 10em;
+  overflow: hidden;
+  transform: rotate(45deg);
+}
+.contribute p {
+  padding: 3px;
+  background-color: #444444;
+}
+.contribute p a {
+  border-top: 1px dashed white;
+  border-bottom: 1px dashed white;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 2px 0px;
+}
 
 .open-modal {
   background-color: #3C3C3C;
