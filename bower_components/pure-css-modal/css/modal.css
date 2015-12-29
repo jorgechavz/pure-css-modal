@@ -37,8 +37,19 @@ Github: http://github.com/jorgechavz
   margin: 0 auto;
   align-self: flex-start;
   border-radius: 2px;
-  transform: translateY(-100%);
   transition: all 0.5s ease;
+}
+.modal .modal_wrap.from_left {
+  transform: translateX(-100%);
+}
+.modal .modal_wrap.from_right {
+  transform: translateX(100%);
+}
+.modal .modal_wrap.from_top {
+  transform: translateY(-100%);
+}
+.modal .modal_wrap.from_bottom {
+  transform: translateY(100%);
 }
 
 
