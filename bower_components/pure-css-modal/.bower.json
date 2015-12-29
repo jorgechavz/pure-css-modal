@@ -24,11 +24,11 @@
     "test",
     "tests"
   ],
-  "_release": "d7233a10db",
+  "_release": "0ccf766ba9",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "d7233a10dbd13badbdb2f6b4ca712cd5894cf9d1"
+    "commit": "0ccf766ba96462f65d53de47943f1f8f5580d6a6"
   },
   "_source": "git://github.com/jorgechavz/pure-css-modal.git",
   "_target": "*",
