@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pure CSS modal</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-71771176-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Pure <span>CSS</span> Modal</h1>
+
+      <!-- Modal -->
+      <div class="modal">
+        <input id="modal-trigger" class="checkbox" type="checkbox">
+        <div class="modal-overlay">
+          <div class="modal-wrap">
+            <label for="modal-trigger" class="close">&#10006;</label>
+            <h2>This is the modal content</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique cum sequi maxime officia provident voluptatibus aut! Non autem asperiores repellat architecto laboriosam officiis ab libero enim illo animi, error alias.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+
+      <!-- This label launch the modal -->
+      <label for="modal-trigger" class="open-modal">Launch modal</label>
+
+      <p>
+        Click the button to open the modal
+      </p>
+
+      <div class="contribute">
+        <p>
+          <a href="https://github.com/jorgechavz/pure-css-modal">Contribute</a>
+        </p>
+      </div>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/jorgechavz/pure-css-modal" data-icon="octicon-star" data-style="mega" data-count-href="/jorgechavz/pure-css-modal/stargazers" data-count-api="/repos/jorgechavz/pure-css-modal#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star jorgechavz/pure-css-modal on GitHub">Star</a>
+    </div>
+    <!-- Place this tag right after the last button or just before your close body tag. -->
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
