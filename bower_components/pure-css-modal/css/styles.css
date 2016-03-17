@@ -1,0 +1,71 @@
+/*
+Author: Jorge Chavez
+Licence: MIT
+*/
+body{
+  font-family: 'Helvetica';
+  background-color: #f9f9f9;
+}
+*{
+  box-sizing: border-box;
+}
+.wrap{
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+}
+.wrap h1{
+  font-size: 70px;
+}
+.wrap h1 span{
+  color: #F42A54;
+}
+.contribute {
+  position: fixed;
+  right: -20px;
+  top: 20px;
+  width: 16em;
+  height: 10em;
+  overflow: hidden;
+  transform: rotate(45deg);
+}
+.contribute p {
+  padding: 3px;
+  background-color: #444444;
+}
+.contribute p a {
+  border-top: 1px dashed white;
+  border-bottom: 1px dashed white;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 2px 0px;
+}
+
+.open-modal {
+  background-color: #3C3C3C;
+  border-radius: 2px;
+  box-shadow: 2px 2px 0 #F42A54;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  transition: all 0.2s ease;
+  display: inline-block;
+  margin: 10px;
+  border-top: 1px solid transparent;
+  min-width: 150px;
+}
+
+.open-modal:hover {
+  cursor: pointer;
+  background-color: #E7E7E7;
+  color: #3C3C3C;
+  border-top: 1px solid #eEeeee;
+  box-shadow: 0.2px 0.2px 2px #F42A54;
+}
+
+@media (max-width: 500px){
+  .wrap {
+    width: 100%;
+  }
+}
