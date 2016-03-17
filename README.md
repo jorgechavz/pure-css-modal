@@ -74,6 +74,30 @@ For example:
 
 ```
 
+You also can config the size of the modal by adding one of this classes
+
+| Class         |
+| ------------- |
+| small         |
+| full          |
+
+For example:
+
+```html
+<div class="modal">
+  <input id="modal_trigger" class="checkbox" type="checkbox">  
+  <div class="modal_overlay">
+    <label for="modal-trigger" class="o-close"></label>
+    <div class="modal_wrap small from_top">
+      <label for="modal_trigger" class="close">&#10006;</label>
+      <!-- YOUR CONTENT HERE -->
+
+    </div>
+  </div>
+</div>
+
+```
+
 
 
 ### Modal in a 'CLOSE' state
