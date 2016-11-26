@@ -36,7 +36,7 @@ Add this basic HTML to your site.
 
 Use a label as a trigger
 ```html
-<label for="modal_trigger">Launch modal</label>
+<label for="modal-trigger">Launch modal</label>
 ```
 
 
