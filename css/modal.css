@@ -22,7 +22,7 @@ Github: http://github.com/jorgechavz
   left: 0;
   z-index: -100;
   transform: scale(1);
-  display: flex;
+  display: none;
   background-color: rgba(0,0,0,0.7);
 }
 
@@ -96,6 +96,13 @@ Github: http://github.com/jorgechavz
   opacity:1;
   z-index: 9997;
   overflow: auto;
+  display: flex;
+  animation-duration: 0.5s;
+  animation-name: fade-in;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-name: fade-in;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: fade-in;
 }
 .modal input:checked ~ .modal-overlay .modal-wrap {
   transform: translateY(0);
@@ -115,5 +122,51 @@ Github: http://github.com/jorgechavz
 @media (max-width: 500px){
   .modal .modal-wrap {
     width: 90%;
+  }
+}
+
+/* Fadein from display:none */
+@keyframes fade-in {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: flex;
+    opacity: 0;
+  }
+  100% {
+    display: flex;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade-in {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: flex;
+    opacity: 0;
+  }
+  100% {
+    display: flex;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: flex;
+    opacity: 0;
+  }
+  100% {
+    display: flex;
+    opacity: 1;
   }
 }
