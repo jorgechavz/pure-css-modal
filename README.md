@@ -14,7 +14,7 @@ bower install pure-css-modal
 
 Add the CSS file to your project
 ```html
-<link rel="stylesheet"bower_components/pure-css-modal/css/modal.css"/>
+<link rel="stylesheet" "bower_components/pure-css-modal/css/modal.css"/>
 ```
 
 Add this basic HTML to your site.
