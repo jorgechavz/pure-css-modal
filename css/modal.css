@@ -5,12 +5,12 @@ Github: http://github.com/jorgechavz
 */
 
 
-.modal .checkbox{
+.pure-modal .checkbox{
   display: none;
 }
 
 /* Gray background */
-.modal .modal-overlay{
+.pure-modal .pure-modal-overlay{
   opacity: 0;
   transition: all 0.3s ease;
   width: 50%;
@@ -27,7 +27,7 @@ Github: http://github.com/jorgechavz
 }
 
 /* Box */
-.modal .modal-wrap{
+.pure-modal .pure-modal-wrap{
   background-color: #ddd;
   box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
   padding: 40px 50px;
@@ -37,33 +37,33 @@ Github: http://github.com/jorgechavz
   border-radius: 2px;
   transition: all 0.5s ease;
 }
-.modal .modal-wrap.small{
+.pure-modal .pure-modal-wrap.small{
   width: 30%;
 }
-.modal .modal-wrap.full{
+.pure-modal .pure-modal-wrap.full{
   width: 100%;
   height: 100%;
 }
 
-.modal .modal-wrap.a-center {
+.pure-modal .pure-modal-wrap.a-center {
   align-self: center;
 }
-.modal .modal-wrap.from-left {
+.pure-modal .pure-modal-wrap.from-left {
   transform: translateX(-100%);
 }
-.modal .modal-wrap.from-right {
+.pure-modal .pure-modal-wrap.from-right {
   transform: translateX(100%);
 }
-.modal .modal-wrap.from-top {
+.pure-modal .pure-modal-wrap.from-top {
   transform: translateY(-100%);
 }
-.modal .modal-wrap.from-bottom {
+.pure-modal .pure-modal-wrap.from-bottom {
   transform: translateY(100%);
 }
 
 
 /* Close button */
-.modal .modal-overlay .close{
+.pure-modal .pure-modal-overlay .close{
   position: absolute;
   right: 10px;
   top: 10px;
@@ -73,13 +73,13 @@ Github: http://github.com/jorgechavz
   color: #282c34;
 }
 
-.modal .modal-overlay .close:hover{
+.pure-modal .pure-modal-overlay .close:hover{
   cursor: pointer;
   color: #4b5361;
 }
 
 
- .modal .o-close {
+ .pure-modal .o-close {
    width: 100%;
    height: 100%;
    position: fixed;
@@ -88,10 +88,10 @@ Github: http://github.com/jorgechavz
    z-index: -100;
  }
 
-.modal input:checked ~ .o-close {
+.pure-modal input:checked ~ .o-close {
   z-index: 9998;
 }
-.modal input:checked ~ .modal-overlay{
+.pure-modal input:checked ~ .pure-modal-overlay{
   transform: scale(1);
   opacity:1;
   z-index: 9997;
@@ -104,7 +104,7 @@ Github: http://github.com/jorgechavz
   -webkit-animation-duration: 0.5s;
   -webkit-animation-name: fade-in;
 }
-.modal input:checked ~ .modal-overlay .modal-wrap {
+.pure-modal input:checked ~ .pure-modal-overlay .pure-modal-wrap {
   transform: translateY(0);
   z-index: 9999;
 }
@@ -112,7 +112,7 @@ Github: http://github.com/jorgechavz
 /* Responsive Design */
 /* Tablet size */
 @media (max-width: 800px){
-  .modal .modal-wrap {
+  .pure-modal .pure-modal-wrap {
     width: 80%;
     padding: 20px;
   }
@@ -120,7 +120,7 @@ Github: http://github.com/jorgechavz
 
 /* Phone size */
 @media (max-width: 500px){
-  .modal .modal-wrap {
+  .pure-modal .pure-modal-wrap {
     width: 90%;
   }
 }
