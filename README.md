@@ -14,7 +14,7 @@ bower install pure-css-modal
 
 Add the CSS file to your project
 ```html
-<link rel="stylesheet"bower_components/pure-css-modal/css/modal.css"/>
+<link rel="stylesheet" "bower_components/pure-css-modal/css/modal.css"/>
 ```
 
 Add this basic HTML to your site.
@@ -36,7 +36,7 @@ Add this basic HTML to your site.
 
 Use a label as a trigger
 ```html
-<label for="modal_trigger">Launch modal</label>
+<label for="modal-trigger">Launch modal</label>
 ```
 
 
