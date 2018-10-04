@@ -8,6 +8,9 @@ Github: http://github.com/jorgechavz
 .pure-modal .checkbox{
   display: none;
 }
+.modal-wrap p {
+  color: #b0b0b0;
+}
 
 /* Gray background */
 .pure-modal .pure-modal-overlay{
@@ -25,10 +28,10 @@ Github: http://github.com/jorgechavz
   display: none;
   background-color: rgba(0,0,0,0.7);
 }
-
 /* Box */
 .pure-modal .pure-modal-wrap{
-  background-color: #ddd;
+  /* background-color: #ddd; */
+  background-color:white;
   box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
   padding: 40px 50px;
   width: 60%;
@@ -65,12 +68,16 @@ Github: http://github.com/jorgechavz
 /* Close button */
 .pure-modal .pure-modal-overlay .close{
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 10px;
   font-size: 40px;
   width: 30px;
   height: 30px;
-  color: #282c34;
+  color: #9b9a9a;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 }
 
 .pure-modal .pure-modal-overlay .close:hover{
