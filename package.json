@@ -7,6 +7,7 @@
   "devDependencies": {
     "grunt": "^1.0.3",
     "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^3.0.1",
     "load-grunt-tasks": "^4.0.0",
     "node-sass": "^4.9.3"

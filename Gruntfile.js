@@ -23,6 +23,12 @@ module.exports = function(grunt) {
           src: 'css/pure-modal.css',
           dest: 'css/pure-modal.css'
       }
+    },
+    watch: {
+      scripts: {
+        files: '**/*.scss',
+        tasks: ['default'],
+      }
     }
   });
 

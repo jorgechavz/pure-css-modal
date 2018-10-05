@@ -91,7 +91,7 @@ Github: http://github.com/jorgechavz
   overflow: auto;
   display: -ms-flexbox;
   display: flex;
-  animation-duration: 0.5s;
+  animation-duration: 0.2s;
   animation-name: fade-in; }
 
 .pure-modal input:checked ~ .pure-modal-overlay .pure-modal-wrap {
