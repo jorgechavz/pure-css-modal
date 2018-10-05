@@ -2,22 +2,22 @@
 Author: Jorge Chavez
 Licence: MIT
 */
-body{
+body {
   font-family: 'Helvetica';
   background-color: #f9f9f9;
 }
-*{
+* {
   box-sizing: border-box;
 }
-.wrap{
+.wrap {
   width: 80%;
   margin: 0px auto;
   text-align: center;
 }
-.wrap h1{
+.wrap h1 {
   font-size: 70px;
 }
-.wrap h1 span{
+.wrap h1 span {
   color: #F42A54;
 }
 .contribute {
@@ -64,7 +64,7 @@ body{
   box-shadow: 0.2px 0.2px 2px #F42A54;
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .wrap {
     width: 100%;
   }
