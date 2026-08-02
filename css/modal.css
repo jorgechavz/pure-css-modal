@@ -23,18 +23,20 @@ Github: http://github.com/jorgechavz
   z-index: -100;
   transform: scale(1);
   display: none;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.5);
 }
 
 /* Box */
 .pure-modal .pure-modal-wrap{
-  background-color: #ddd;
-  box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
-  padding: 40px 50px;
+  background: #fdfbfb;
+  border-radius: 0.2em;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+  padding: 40px 65px;
   width: 60%;
   margin: 20px auto;
   align-self: flex-start;
-  border-radius: 2px;
   transition: all 0.5s ease;
 }
 .pure-modal .pure-modal-wrap.small{
@@ -64,18 +66,26 @@ Github: http://github.com/jorgechavz
 
 /* Close button */
 .pure-modal .pure-modal-overlay .close{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background: #282c34;
+  border-radius: 50%;
+  justify-content: center;
   position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 40px;
+  right: -10px;
+  top: -10px;
+  font-size: 15px;
   width: 30px;
   height: 30px;
-  color: #282c34;
+  color: #d1d1d1;
 }
 
 .pure-modal .pure-modal-overlay .close:hover{
   cursor: pointer;
+  background-color: #d1d1d1;
   color: #4b5361;
+  transition: all 0.3s ease;
 }
 
 
