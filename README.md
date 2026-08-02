@@ -1,116 +1,134 @@
-# Pure CSS modal
-CSS modal. No javascript.
+# Pure CSS Modal
 
+A lightweight, accessible modal box built with **pure CSS** — no JavaScript required.
 
-## DEMO
-See the demo: http://jorgechavz.github.io/pure-css-modal/
+It uses the classic "checkbox hack": a hidden checkbox holds the open/closed state and `<label>` elements act as triggers, so the modal works anywhere HTML and CSS do.
 
+**[Live demo →](http://jorgechavz.github.io/pure-css-modal/)**
+
+## Features
+
+- 🚫 **Zero JavaScript** — pure HTML + CSS
+- 🪶 **Tiny** — one small CSS file, no dependencies
+- 🎬 **Animated entrances** — slide in from top, bottom, left, or right
+- 📐 **Configurable sizing** — normal, `small`, or `full` screen
+- 📱 **Responsive** — adapts to tablet and phone widths
+- ✅ **Click-outside & close button** to dismiss
 
 ## Installation
-Via bower
+
+### Option 1 — Copy the file
+
+Download [`css/modal.css`](css/modal.css) and add it to your project:
+
+```html
+<link rel="stylesheet" href="css/modal.css">
 ```
+
+### Option 2 — Bower
+
+```bash
 bower install pure-css-modal
 ```
 
-Add the CSS file to your project
 ```html
-<link rel="stylesheet" "bower_components/pure-css-modal/css/modal.css"/>
+<link rel="stylesheet" href="bower_components/pure-css-modal/css/modal.css">
 ```
 
-Add this basic HTML to your site.
+> `modal.css` is the only file you need. `styles.css` only styles the demo page.
+
+## Quick start
+
+Add the modal markup and a trigger. The trigger's `for` attribute must match the checkbox `id`.
+
 ```html
-<div class="modal">
+<!-- Modal -->
+<div class="pure-modal">
   <input id="modal-trigger" class="checkbox" type="checkbox">
-  <div class="modal-overlay">
+  <div class="pure-modal-overlay">
     <label for="modal-trigger" class="o-close"></label>
-    <div class="modal-wrap">
+    <div class="pure-modal-wrap">
       <label for="modal-trigger" class="close">&#10006;</label>
       <h2>This is the modal content</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique cum sequi maxime officia provident voluptatibus aut! Non autem asperiores repellat architecto laboriosam officiis ab libero enim illo animi, error alias.
-      </p>
+      <p>Put anything you want in here.</p>
     </div>
   </div>
 </div>
+
+<!-- Trigger (place anywhere) -->
+<label for="modal-trigger">Open modal</label>
 ```
 
-Use a label as a trigger
+That's it — clicking the trigger opens the modal. It closes when the user clicks the
+`&#10006;` button (`.close`) or the dark backdrop (`.o-close`).
+
+> **Multiple modals?** Give each one a unique `id` on the `.checkbox` input and match it
+> in every `for` attribute (e.g. `modal-trigger-signup`, `modal-trigger-terms`).
+
+## Structure
+
+| Element | Class | Role |
+| ------- | ----- | ---- |
+| Container | `.pure-modal` | Wraps the whole component |
+| State | `.checkbox` | Hidden checkbox that stores open/closed state |
+| Backdrop | `.pure-modal-overlay` | Full-screen dimmed layer |
+| Click-outside | `.o-close` | Invisible label; closes the modal on backdrop click |
+| Content box | `.pure-modal-wrap` | The visible modal panel |
+| Close button | `.close` | The `✖` label that closes the modal |
+
+## Customization
+
+Add modifier classes to the **`.pure-modal-wrap`** element.
+
+### Entrance direction
+
+| Class | Effect |
+| ----- | ------ |
+| `from-top` | Slides down from the top |
+| `from-bottom` | Slides up from the bottom |
+| `from-left` | Slides in from the left |
+| `from-right` | Slides in from the right |
+
+### Position
+
+| Class | Effect |
+| ----- | ------ |
+| `a-center` | Centers the modal vertically (default is top-aligned) |
+
+### Size
+
+| Class | Effect |
+| ----- | ------ |
+| _(none)_ | Default width (60%) |
+| `small` | Narrow modal (30%) |
+| `full` | Fills the entire viewport |
+
+### Example
+
+Combine modifiers freely — here a small, vertically centered modal that slides up from the bottom:
+
 ```html
-<label for="modal-trigger">Launch modal</label>
-```
-
-
-## Customize
-Add entrance direction to the modal by adding any of this classes to the `modal-wrap` div
-
-| Class         |
-| ------------- |
-| from-top      |
-| from-bottom   |
-| from-left     |
-| from-right    |
-
-You can center the modal in the middle of the screen by adding the class `a-center` to the `modal-wrap`
-
-| Class    |
-|----------|
-| a-center |
-
-
-For example:
-
-```html
-<div class="modal">
-  <input id="modal_trigger" class="checkbox" type="checkbox">  
-  <div class="modal_overlay">
+<div class="pure-modal">
+  <input id="modal-trigger" class="checkbox" type="checkbox">
+  <div class="pure-modal-overlay">
     <label for="modal-trigger" class="o-close"></label>
-    <div class="modal_wrap from_top">
-      <label for="modal_trigger" class="close">&#10006;</label>
+    <div class="pure-modal-wrap a-center small from-bottom">
+      <label for="modal-trigger" class="close">&#10006;</label>
       <!-- YOUR CONTENT HERE -->
-
     </div>
   </div>
 </div>
-
 ```
 
-You also can config the size of the modal by adding one of this classes
+## Browser support
 
-| Class         |
-| ------------- |
-| small         |
-| full          |
+Works in all modern browsers. It relies on the `:checked` pseudo-class, the general
+sibling combinator (`~`), CSS transforms, and transitions.
 
-For example:
+## Author
 
-```html
-<div class="modal">
-  <input id="modal_trigger" class="checkbox" type="checkbox">  
-  <div class="modal_overlay">
-    <label for="modal-trigger" class="o-close"></label>
-    <div class="modal_wrap small from_top">
-      <label for="modal_trigger" class="close">&#10006;</label>
-      <!-- YOUR CONTENT HERE -->
+Jorge Chavez — https://github.com/jorgechavz
 
-    </div>
-  </div>
-</div>
+## License
 
-```
-
-
-
-### Modal in a 'CLOSE' state
-<img src="http://i653.photobucket.com/albums/uu259/chikinflue/Captura%20de%20pantalla%202015-06-18%20a%20las%2018.18.03_zpsq85cq4bo.png">
-
-### Modal in a 'OPEN' state
-<img src="http://i653.photobucket.com/albums/uu259/chikinflue/Captura%20de%20pantalla%202015-12-28%20a%20las%2012.55.43%20p.m._zpspi75mkct.png">
-
-
-### Author
-Jorge Chavez https://github.com/jorgechavz
-
-## Licence
-The MIT License (MIT)
-
-See [LICENCE](https://github.com/jorgechavz/pure-css-modal/blob/master/LICENSE) for details.
+Released under the [MIT License](LICENSE).

@@ -12,17 +12,18 @@ Github: http://github.com/jorgechavz
 /* Gray background */
 .pure-modal .pure-modal-overlay{
   opacity: 0;
-  transition: all 0.3s ease;
-  width: 50%;
-  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+  /* Delay hiding (visibility) until the fade-out has finished */
+  transition: opacity 0.3s ease, visibility 0s ease 0.3s;
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: -100;
-  transform: scale(1);
-  display: none;
+  display: flex;
+  overflow: auto;
   background-color: rgba(0,0,0,0.5);
 }
 
@@ -51,16 +52,16 @@ Github: http://github.com/jorgechavz
   align-self: center;
 }
 .pure-modal .pure-modal-wrap.from-left {
-  transform: translateX(-100%);
+  transform: translateX(-100vw);
 }
 .pure-modal .pure-modal-wrap.from-right {
-  transform: translateX(100%);
+  transform: translateX(100vw);
 }
 .pure-modal .pure-modal-wrap.from-top {
-  transform: translateY(-100%);
+  transform: translateY(-100vh);
 }
 .pure-modal .pure-modal-wrap.from-bottom {
-  transform: translateY(100%);
+  transform: translateY(100vh);
 }
 
 
@@ -102,20 +103,15 @@ Github: http://github.com/jorgechavz
   z-index: 9998;
 }
 .pure-modal input:checked ~ .pure-modal-overlay{
-  transform: scale(1);
-  opacity:1;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
   z-index: 9997;
-  overflow: auto;
-  display: flex;
-  animation-duration: 0.5s;
-  animation-name: fade-in;
-  -moz-animation-duration: 0.5s;
-  -moz-animation-name: fade-in;
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-name: fade-in;
+  /* Become visible immediately, then fade in */
+  transition: opacity 0.3s ease, visibility 0s ease 0s;
 }
 .pure-modal input:checked ~ .pure-modal-overlay .pure-modal-wrap {
-  transform: translateY(0);
+  transform: translate(0, 0);
   z-index: 9999;
 }
 
@@ -132,51 +128,5 @@ Github: http://github.com/jorgechavz
 @media (max-width: 500px){
   .pure-modal .pure-modal-wrap {
     width: 90%;
-  }
-}
-
-/* Fadein from display:none */
-@keyframes fade-in {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: flex;
-    opacity: 0;
-  }
-  100% {
-    display: flex;
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fade-in {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: flex;
-    opacity: 0;
-  }
-  100% {
-    display: flex;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: flex;
-    opacity: 0;
-  }
-  100% {
-    display: flex;
-    opacity: 1;
   }
 }
