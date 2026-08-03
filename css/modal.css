@@ -71,6 +71,7 @@ Github: http://github.com/jorgechavz
   flex-direction: column;
   align-content: center;
   background: #282c34;
+  border: 0;
   border-radius: 50%;
   justify-content: center;
   position: absolute;
@@ -97,12 +98,24 @@ Github: http://github.com/jorgechavz
    left: 0;
    top: 0;
    z-index: -100;
+   border: 0;
+   padding: 0;
+   background: transparent;
+   cursor: pointer;
  }
 
-.pure-modal input:checked ~ .o-close {
+/*
+ * Open state.
+ * Two triggers are supported so both usages work from the same styles:
+ *   - `input:checked ~ ...`  -> the pure-CSS checkbox hack (plain HTML / uncontrolled React)
+ *   - `.pure-modal.is-open`  -> a class toggled by the controlled React component
+ */
+.pure-modal input:checked ~ .o-close,
+.pure-modal.is-open .o-close {
   z-index: 9998;
 }
-.pure-modal input:checked ~ .pure-modal-overlay{
+.pure-modal input:checked ~ .pure-modal-overlay,
+.pure-modal.is-open .pure-modal-overlay{
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -110,7 +123,8 @@ Github: http://github.com/jorgechavz
   /* Become visible immediately, then fade in */
   transition: opacity 0.3s ease, visibility 0s ease 0s;
 }
-.pure-modal input:checked ~ .pure-modal-overlay .pure-modal-wrap {
+.pure-modal input:checked ~ .pure-modal-overlay .pure-modal-wrap,
+.pure-modal.is-open .pure-modal-overlay .pure-modal-wrap {
   transform: translate(0, 0);
   z-index: 9999;
 }

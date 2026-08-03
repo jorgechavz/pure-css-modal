@@ -1,0 +1,63 @@
+{
+  "name": "pure-css-modal",
+  "version": "1.0.0",
+  "description": "A lightweight modal that works with pure CSS (no JavaScript) — with an optional React component.",
+  "homepage": "http://jorgechavz.github.io/pure-css-modal/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgechavz/pure-css-modal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jorgechavz/pure-css-modal/issues"
+  },
+  "author": "Jorge Chavez",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "modal",
+    "dialog",
+    "react",
+    "react-component",
+    "no-javascript",
+    "popup"
+  ],
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./modal.css": "./css/modal.css",
+    "./css": "./css/modal.css",
+    "./css/modal.css": "./css/modal.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "css",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "react": "^18.3.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  }
+}
